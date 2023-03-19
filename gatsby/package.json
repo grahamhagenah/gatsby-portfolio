@@ -1,0 +1,45 @@
+{
+  "name": "grahamhagenah",
+  "version": "1.0.0",
+  "private": true,
+  "description": "grahamhagenah",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "upgrade-interactive": "npm-check --update"
+  },
+  "dependencies": {
+    "@fontsource/barlow": "^4.5.6",
+    "@fortawesome/fontawesome-svg-core": "^6.1.1",
+    "@fortawesome/free-solid-svg-icons": "^6.1.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@portabletext/react": "^2.0.2",
+    "babel-plugin-styled-components": "^2.0.7",
+    "gatsby": "^5.7.0",
+    "gatsby-image": "^3.11.0",
+    "gatsby-plugin-google-fonts": "^1.0.1",
+    "gatsby-plugin-image": "^3.7.0",
+    "gatsby-plugin-sanity-image": "^0.13.4",
+    "gatsby-plugin-sharp": "^5.7.0",
+    "gatsby-plugin-styled-components": "^6.7.0",
+    "gatsby-source-sanity": "^7.6.3",
+    "gatsby-transformer-sharp": "^5.7.0",
+    "normalize.css": "^8.0.1",
+    "prettier": "^2.8.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
+    "react-icons": "^4.8.0",
+    "react-is": "^18.2.0",
+    "styled-components": "^5.3.9"
+  },
+  "devDependencies": {
+    "npm-check": "^6.0.1"
+  }
+}
