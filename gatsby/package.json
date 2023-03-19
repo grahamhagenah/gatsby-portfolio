@@ -28,6 +28,7 @@
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-image": "^3.7.0",
+    "gatsby-plugin-netlify": "^5.1.0",
     "gatsby-plugin-sanity-image": "^0.13.4",
     "gatsby-plugin-sharp": "^5.7.0",
     "gatsby-plugin-styled-components": "^6.7.0",
