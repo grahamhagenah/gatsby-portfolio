@@ -136,7 +136,8 @@ const ProjectStyles = styled.div`
   }
 
   .browser-view {
-    margin: 10rem 0;
+    margin: 10rem auto;
+    max-width: 80%;
 
     @media screen and (max-width: 700px) {
       margin: 5rem 0;

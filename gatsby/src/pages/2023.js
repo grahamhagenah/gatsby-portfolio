@@ -11,6 +11,7 @@ const IntroStyles = styled.div`
     font-size: 70px;
     font-weight: 500;
     line-height: 1.25;
+    padding: 20rem 0 30rem 0;
 
     strong {
       font-weight: 700;
@@ -56,27 +57,6 @@ export default function IndexPage( { data } ) {
       <IntroStyles data-sal="slide-up" data-sal-delay="200" data-sal-easing="ease" data-sal-duration="1000">
         <h1><strong>Web Developer</strong> in Brooklyn crafting elegant <em>digital</em> experiences</h1>
       </IntroStyles>
-      <InfoStyles>
-        <ul>
-          <li>
-            <p>I've built websites for a wide variety of clients including artists, authors, small businesses, and non-profits.</p>
-          </li>
-          <li>
-            <p>Most recently, I worked for an HR-tech company called <strong><a className="link" target="_blank" rel="noreferrer" href="https://www.predictiveindex.com/">The Predictive Index</a></strong>, the leaders of talent optimization.</p>
-          </li>
-          <li>
-            <p>When I'm not on the web, I'm climbing, practicing yoga, taking photos, cycling, and raving about movies with friends.</p>
-          </li>
-        </ul>
-      </InfoStyles>
-      <ContactMe text="Want to make something together?" buttonText="Email me"/>
-      <InfoStyles>
-        <section className="skills">
-          <h2>More about my skills</h2>
-          <p>I'm a frontend software engineer with roots in design and digital marketing. I focus on the user-facing end of websites — the visual interface - but I've also delved deep into backend development with frameworks like Remix and languages like PHP. I build powerful, lightweight applications with libraries like React, as well as speedy, highly-discoverable static websites, and user-friendly, bespoke themes for WordPress. </p>
-        </section>
-      </InfoStyles>
-      <Skills stack={['HTML', 'CSS', 'JavaScript', 'React', 'PHP', 'WordPress', 'Accessibility']} />
       <ProjectList projects={projects} />
     </>
   )

@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components';
-import Resume from '../assets/documents/Graham-Hagenah-Resume.pdf'
 
 const FooterStyles = styled.footer`
 

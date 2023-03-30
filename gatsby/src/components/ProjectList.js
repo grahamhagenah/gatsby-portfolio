@@ -117,14 +117,6 @@ function SingleProject( { project } ) {
 export default function ProjectList( { projects } ) {
   return (
     <ProjectGridStyles>
-      <div className="projects-intro">
-        <h2>What I've been working on</h2>
-        <p>I stay busy with side projects to keep my skills sharp and learn unfamiliar libraries and frameworks. 
-          I love working with talented designers, but I don't shy away from creating graphics and web layouts myself. 
-          Take a look at some of my noteworthy personal and professional projects.
-          
-        </p>
-      </div>
       <div className="project-grid">
         {projects.map(project => (
           <SingleProject key={project.id} project={project}  />

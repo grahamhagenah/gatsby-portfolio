@@ -30,6 +30,7 @@
     "gatsby-plugin-image": "^3.7.0",
     "gatsby-plugin-netlify": "^5.1.0",
     "gatsby-plugin-sanity-image": "^0.13.4",
+    "gatsby-plugin-scroll-reveal": "^0.0.7",
     "gatsby-plugin-sharp": "^5.7.0",
     "gatsby-plugin-styled-components": "^6.7.0",
     "gatsby-source-sanity": "^7.6.3",
@@ -41,6 +42,7 @@
     "react-helmet": "^6.1.0",
     "react-icons": "^4.8.0",
     "react-is": "^18.2.0",
+    "sal.js": "^0.8.5",
     "styled-components": "^5.3.9"
   },
   "devDependencies": {
