@@ -18,6 +18,7 @@ module.exports = {
     `gatsby-transformer-sharp`, // Needed for dynamic images
     `gatsby-plugin-netlify`,
     // `gatsby-plugin-scroll-reveal`,
+    `gatsby-plugin-fix-fouc`,
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
