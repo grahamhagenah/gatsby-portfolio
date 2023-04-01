@@ -26,6 +26,7 @@
     "babel-plugin-styled-components": "^2.0.7",
     "gatsby": "^5.7.0",
     "gatsby-image": "^3.11.0",
+    "gatsby-plugin-fix-fouc": "^1.0.2",
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-image": "^3.7.0",
     "gatsby-plugin-netlify": "^5.1.0",
