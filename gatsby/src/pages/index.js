@@ -17,8 +17,8 @@ const IntroStyles = styled.div`
     }
 
     @media screen and (max-width: 700px) {
-      padding: 3rem 0 5rem 0;
-      font-size: 30px;
+      padding: 15rem 0 15rem 0;
+      font-size: 45px;
     }
   }
 
@@ -40,11 +40,31 @@ const InfoStyles = styled.div`
     }
   }
 
+  p {
+    font-size: 20px;
+  }
+
+  a  {
+    text-decoration: underline;
+
+    @hover {
+      color: red;
+    }
+  }
+
+  h2 {
+    @media screen and (max-width: 700px) {
+      font-size: 28px;
+    }
+  }
+
   .skills {
     max-width: 60%;
+    margin-bottom: 10rem;
 
     @media screen and (max-width: 700px) {
       max-width: 100%;
+      margin-bottom: 10rem;
     }
   }
 `;
@@ -57,23 +77,9 @@ export default function IndexPage( { data } ) {
         <h1><strong>Web Developer</strong> in Brooklyn crafting elegant <em>digital</em> experiences</h1>
       </IntroStyles>
       <InfoStyles>
-        <ul>
-          <li>
-            <p>I've built websites for a wide variety of clients including artists, authors, small businesses, and non-profits.</p>
-          </li>
-          <li>
-            <p>Most recently, I worked for an HR-tech company called <strong><a className="link" target="_blank" rel="noreferrer" href="https://www.predictiveindex.com/">The Predictive Index</a></strong>, the leaders of talent optimization.</p>
-          </li>
-          <li>
-            <p>When I'm not on the web, I'm climbing, practicing yoga, taking photos, cycling, and raving about movies with friends.</p>
-          </li>
-        </ul>
-      </InfoStyles>
-      <ContactMe text="Want to make something together?" buttonText="Email me"/>
-      <InfoStyles>
-        <section className="skills">
-          <h2>More about my skills</h2>
-          <p>I'm a frontend software engineer with roots in design and digital marketing. I focus on the user-facing end of websites — the visual interface - but I've also delved deep into backend development with frameworks like Remix and languages like PHP. I build powerful, lightweight applications with libraries like React, as well as speedy, highly-discoverable static websites, and user-friendly, bespoke themes for WordPress. </p>
+        <section className="skills" data-sal="fade-in" data-sal-delay="500" data-sal-easing="ease" data-sal-duration="1000">
+          <h2>Hey there - I'm Graham</h2>
+          <p>I build performant websites and intuitive user-interfaces with HTML, CSS, and JavaScript, as well as front-end libraries like React. My approach is inclusive and empathetic; I aim to create accessible experiences for all users regardless of their individual needs or challenges. <a href="/about">Read more about me.</a></p>
         </section>
       </InfoStyles>
       <Skills stack={['HTML', 'CSS', 'JavaScript', 'React', 'PHP', 'WordPress', 'Accessibility']} />

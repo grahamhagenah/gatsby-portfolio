@@ -16,10 +16,6 @@ let delay = 0;
 
 const SkillsStyles = styled.div`
 
-  .skills {
-    margin-bottom: 175px;
-  }
-
   .skills p {
     max-width: 60%;
 
@@ -29,7 +25,7 @@ const SkillsStyles = styled.div`
   }
 
   .skills-grid {
-    margin: 10rem 0 200px 0;
+    margin: 0rem 0 20rem 0;
   }
 
   #html-skill {
