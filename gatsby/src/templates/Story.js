@@ -189,74 +189,33 @@ const ProjectStyles = styled.div`
   }
 `;
 
-export default function SingleProjectPage({ data: { project } }) {
-  
+export default function SingleStoryPage({ data: { story } }) {
 
-  const desktop = getImage(project.desktop.asset)
-  const mobile = getImage(project.mobile.asset)
-  const stack = project.stack
+  const image = getImage(story.image.asset)
 
   return (
     <div>
       <IntroStyles data-sal="slide-up" data-sal-delay="200" data-sal-easing="ease" data-sal-duration="1000">
-        <h1><strong>{project.name}</strong></h1>
+        <h1><strong>{story.name}</strong></h1>
       </IntroStyles>
-      <ProjectStyles>
-        {project.url !== null &&
-          <div className="project-button-links">
-            <button className="mr-2"><a target="_blank" href={project.source}>View code</a></button>
-            <button><a target="_blank" href={project.url}>View Site</a></button>
-          </div>
-        }
-        <section className="overview">
-          <PortableText value={project.overview} />
-          {project.type !== 'story' && 
-            <h3><span className="mr-1">Stack: </span><strong>{project.stack.join('  +  ')}</strong></h3>
-          }
-        </section>
-        {project.type !== 'story' && 
-          <div className="browser-view">
-            <div className="browser-top">
-              <p id="project-url">{project.url}</p>
-              <img className="browser-graphic" src={Browser} alt="" />
-            </div>
-            <GatsbyImage image={desktop} alt="" />
-          </div>
-        }
-        <div className='project-description'>
+      <div className="browser-view">
+        <div className="browser-top">
+          <img className="browser-graphic" src={Browser} alt="" />
+        </div>
+        <GatsbyImage image={image} alt="" />
+      </div>
+        <div className='story-description'>
           <section className='section-1'>
-            <PortableText value={project.text} />
-          </section>
-          <section className='section-2'>
-            <SkillsVertical>
-              <Skills stack={stack} />
-            </SkillsVertical>
-            <div className="stack-description">
-              <PortableText value={project.stackDescription} />
-            </div>
-          </section>
-          <section className='section-3'>
-            <div className="stack-description">
-              <PortableText value={project.why} />
-            </div>
-            {project.type !== 'story' && 
-              <div className="browser-view-mobile">
-                <div className="browser-top">
-                  <img className="browser-graphic" src={BrowserMobile} alt="" />
-                </div>
-                <GatsbyImage image={mobile} alt="" />
-              </div>
-            }
+            <PortableText value={story.text} />
           </section>
         </div>
-      </ProjectStyles>
     </div>
   )
 };
 
 export const query = graphql`
   query($slug: String!) {
-    project: sanityProjects(slug: { current: { eq: $slug} }) {
+    story: sanityProjects(slug: { current: { eq: $slug} }) {
       subtitle
       name 
       url
@@ -269,16 +228,6 @@ export const query = graphql`
       why: _rawWhy(resolveReferences: {maxDepth: 5})
       stackDescription: _rawStackDescription (resolveReferences: {maxDepth: 5})
       image {
-        asset {
-          gatsbyImageData
-        }
-      }
-      desktop {
-        asset {
-          gatsbyImageData
-        }
-      }
-      mobile {
         asset {
           gatsbyImageData
         }

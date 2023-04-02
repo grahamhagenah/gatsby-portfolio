@@ -5,12 +5,18 @@ exports.onPostBuild = ({ reporter }) => {
 }
 // Create blog pages dynamically
 exports.createPages = async ({ graphql, actions }) => {
-  const projectTemplate = path.resolve('./src/templates/Project.js');
+
+  const templates = {
+    story: path.resolve('./src/templates/Story.js'),
+    project: path.resolve('./src/templates/Project.js')
+  };
+
   const result = await graphql(`
     query {
       projects: allSanityProjects {
         nodes {
           name
+          type
           slug {
             current
           }
@@ -18,12 +24,13 @@ exports.createPages = async ({ graphql, actions }) => {
       }
     }
   `)
-  result.data.projects.nodes.forEach(project => {
+  result.data.projects.nodes.forEach(node => {
+    const contentType = node.type
     actions.createPage({
-      path: `project/${project.slug.current}`,
-      component: projectTemplate,
+      path: `project/${node.slug.current}`,
+      component: templates[contentType],
       context: {
-        slug: project.slug.current
+        slug: node.slug.current
       }
     });
   });

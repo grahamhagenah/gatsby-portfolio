@@ -50,6 +50,7 @@ export default {
       options: {
         hotspot: true,
       },
+      hidden: ({document}) => document?.type == 'story'
     },
     {
       name: 'mobile',
@@ -58,24 +59,28 @@ export default {
       options: {
         hotspot: true,
       },
+      hidden: ({document}) => document?.type == 'story'
     },
     {
       name: 'date',
       title: 'Date',
       type: 'string',
-      description: 'Date completed'
+      description: 'Date completed',
+      hidden: ({document}) => document?.type == 'story'
     },
     {
       name: 'url',
       title: 'URL',
       type: 'url',
-      description: 'URL of project'
+      description: 'URL of project',
+      hidden: ({document}) => document?.type == 'story'
     },
     {
       name: 'source',
       title: 'Source Code',
       type: 'url',
-      description: 'Source code of project'
+      description: 'Source code of project',
+      hidden: ({document}) => document?.type == 'story'
     },
     {
       title: 'Overview', 
@@ -88,7 +93,8 @@ export default {
       title: 'Stack',
       name: 'stack',
       type: 'array',
-      of: [{type: 'string'}]
+      of: [{type: 'string'}],
+      hidden: ({document}) => document?.type == 'story'
     },
     {
       title: 'Full Description', 
@@ -102,14 +108,16 @@ export default {
       name: 'why',
       type: 'array', 
       description: 'Describe the purpose and goal',
-      of: [{type: 'block'}]
+      of: [{type: 'block'}],
+      hidden: ({document}) => document?.type == 'story'
     },
     {
       title: 'Stack Description',
       name: 'stackDescription',
       type: 'array', 
       description: 'Explain the tech stack',
-      of: [{type: 'block'}]
+      of: [{type: 'block'}],
+      hidden: ({document}) => document?.type == 'story'
     }
   ],
 };
