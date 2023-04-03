@@ -19,7 +19,7 @@ const Typography = createGlobalStyle`
   }
 
   p {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 2;
   }
 

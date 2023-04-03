@@ -3,8 +3,8 @@ import { graphql } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import styled from 'styled-components'
 import {PortableText} from '@portabletext/react'
-import Browser from '../assets/images/browser.svg'
-import BrowserMobile from '../assets/images/mobile-browser.svg'
+import Browser from '../assets/images/browser-light.svg'
+import BrowserMobile from '../assets/images/mobile-browser-light.svg'
 import Skills from '../components/Skills'
 
 const IntroStyles = styled.div`
@@ -180,7 +180,7 @@ const ProjectStyles = styled.div`
   #project-url {
     position: absolute;
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     color: var(--grey);
 
     @media screen and (max-width: 700px) {

@@ -45,7 +45,7 @@ const GlobalStyles = createGlobalStyle`
   h1 {
     font-size: 50px;
     font-weight: 700;
-    padding: 20rem 0 20rem 0;
+    padding: 19rem 0 19rem 0;
     line-height: 1.25;
 
     @media screen and (max-width: 700px) {

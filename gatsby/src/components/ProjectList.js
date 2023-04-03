@@ -10,7 +10,7 @@ const ProjectGridStyles = styled.div`
   .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-    gap: 8rem;
+    gap: 6rem;
 
     @media screen and (max-width: 700px) {
       grid-template-columns: 1fr;
@@ -47,6 +47,7 @@ const ProjectStyles = styled.div`
 
     p {
       margin-top: 0;
+      margin-bottom: 1rem;
     }
   }
 

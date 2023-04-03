@@ -1,6 +1,5 @@
 import * as React from 'react'
 import styled from 'styled-components'
-import ContactMe from '../components/ContactMe';
 import ProjectList from '../components/ProjectList';
 import Skills from '../components/Skills';
 import { graphql } from 'gatsby'
@@ -9,7 +8,7 @@ const IntroStyles = styled.div`
 
   h1 {
     font-size: 70px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 1.25;
 
     strong {
@@ -41,7 +40,7 @@ const InfoStyles = styled.div`
   }
 
   p {
-    font-size: 20px;
+    font-size: 23px;
   }
 
   a  {
@@ -59,7 +58,7 @@ const InfoStyles = styled.div`
   }
 
   .skills {
-    max-width: 60%;
+    max-width: 65%;
     margin-bottom: 10rem;
 
     @media screen and (max-width: 700px) {
@@ -78,8 +77,7 @@ export default function IndexPage( { data } ) {
       </IntroStyles>
       <InfoStyles>
         <section className="skills" data-sal="fade-in" data-sal-delay="500" data-sal-easing="ease" data-sal-duration="1000">
-          <h2>Hey there - I'm Graham</h2>
-          <p>I build performant websites and intuitive user-interfaces with HTML, CSS, and JavaScript, as well as front-end libraries like React. My approach is inclusive and empathetic; I aim to create accessible experiences for all users regardless of their individual needs or challenges. <a href="/about">Read more about me.</a></p>
+          <p><strong>Hey there - I'm Graham.</strong> I build performant websites and intuitive user-interfaces with HTML, CSS, and JavaScript, as well as front-end libraries like React. My approach is inclusive and empathetic; I aim to create delightful applications for all users regardless of their individual needs or challenges. <a href="/about">Read more about me.</a></p>
         </section>
       </InfoStyles>
       <Skills stack={['HTML', 'CSS', 'JavaScript', 'React', 'PHP', 'WordPress', 'Accessibility']} />
