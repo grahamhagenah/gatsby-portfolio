@@ -14,6 +14,7 @@ const Typography = createGlobalStyle`
   }
 
   h2 {
+    font-family: 'Barlow', -apple-system, BlinkMacSystemFont, sans-serif;
     font-weight: 600;
     font-size: 36px;
   }
@@ -21,6 +22,7 @@ const Typography = createGlobalStyle`
   p {
     font-size: 20px;
     line-height: 2;
+    font-family: 'Roboto', sans-serif;
   }
 
   .read-more-link {

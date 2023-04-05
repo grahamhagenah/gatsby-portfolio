@@ -16,8 +16,12 @@ const GlobalStyles = createGlobalStyle`
   body {
     font-family: 'Barlow', sans-serif;
     font-size: 18px;
-    line-height: 2;
+    line-height: 1.875rem;
     margin: 1rem 2rem;
+
+    @media screen and (max-width: 700px) {
+      font-size: 15px;
+    }
   }
 
   button {

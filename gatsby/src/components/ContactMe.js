@@ -5,7 +5,7 @@ const ContactMeStyles = styled.div`
 
   p {
     margin: 0;
-    font-size: 17px;
+    font-size: 19px;
 
     @media screen and (max-width: 700px) {
       display: block;
@@ -28,7 +28,7 @@ const ContactMeStyles = styled.div`
     display: flex;
     flex-flow: wrap;
     line-height: 2;
-    margin: 10rem 0 15rem 0;
+    margin: 10rem 0 10rem 0;
     background-color: #f8f8f8;
     
       @media screen and (max-width: 700px) {

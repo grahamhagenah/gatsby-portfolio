@@ -25,6 +25,12 @@ export default {
       },
     },
     {
+      name: 'date',
+      title: 'Date',
+      type: 'date',
+      description: 'Date completed',
+    },
+    {
       name: 'type',
       title: 'Project Type',
       type: 'string',
@@ -59,13 +65,6 @@ export default {
       options: {
         hotspot: true,
       },
-      hidden: ({document}) => document?.type == 'story'
-    },
-    {
-      name: 'date',
-      title: 'Date',
-      type: 'string',
-      description: 'Date completed',
       hidden: ({document}) => document?.type == 'story'
     },
     {
@@ -118,6 +117,15 @@ export default {
       description: 'Explain the tech stack',
       of: [{type: 'block'}],
       hidden: ({document}) => document?.type == 'story'
-    }
+    },
   ],
+  orderings: [
+    {
+      title: 'Date',
+      name: 'dateDesc',
+      by: [
+        {field: 'date', direction: 'desc'}
+      ]
+    },
+  ]
 };

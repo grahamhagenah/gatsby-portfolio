@@ -26,6 +26,10 @@ const SkillsStyles = styled.div`
 
   .skills-grid {
     margin: 0rem 0 20rem 0;
+
+    @media screen and (max-width: 700px) {
+      margin: 0rem 0 10rem 0;
+    }
   }
 
   #html-skill {
@@ -76,6 +80,11 @@ const SkillsStyles = styled.div`
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0;
+
+    li {
+      line-height: 2;
+      transition: .25s;
+    }
 
     @media screen and (max-width: 700px) {
       display: block;

@@ -6,7 +6,7 @@ import { Link } from 'gatsby'
 const NavStyles = styled.nav`
 
   #logo {
-    height: 35px;
+    height: 40px;
     fill: rgb(46, 46, 46);
     transform: scale(1);
     transition: .5s;
@@ -14,8 +14,8 @@ const NavStyles = styled.nav`
   }
 
   #logo:hover {
-    transform: scale(1.25);
-    transition: .2s;
+    transform: scale(1.15);
+    transition: .25s;
   }
 
   #logo:active {

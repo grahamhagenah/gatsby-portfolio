@@ -47,7 +47,14 @@ const ProjectStyles = styled.div`
 
     p {
       margin-top: 0;
-      margin-bottom: 1rem;
+      margin-bottom: 2rem;
+      line-height: 1.75;
+      max-width: 90%;
+
+      @media screen and (max-width: 700px) {
+        max-width: 100%;
+        font-size: 18px;
+      }
     }
   }
 

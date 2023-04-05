@@ -23,7 +23,8 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `Barlow\:200,300,400,500,600,700,800`
+          `Barlow\:200,300,400,500,600,700,800`,
+          `Roboto\:200,300,400,500,600,700,800`
         ],
         display: 'block'
       }

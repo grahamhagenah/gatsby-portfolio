@@ -1,4 +1,4 @@
-import{r as D}from"./sanity-1a0c0219.js";/*
+import{r as D}from"./sanity-a2dfe28c.js";/*
 object-assign
 (c) Sindre Sorhus
 @license MIT

@@ -17,7 +17,7 @@ const IntroStyles = styled.div`
 
     @media screen and (max-width: 700px) {
       padding: 15rem 0 15rem 0;
-      font-size: 45px;
+      font-size: 42px;
     }
   }
 
@@ -41,6 +41,10 @@ const InfoStyles = styled.div`
 
   p {
     font-size: 23px;
+
+    @media screen and (max-width: 700px) {
+      font-size: 18px;
+    }
   }
 
   a  {
