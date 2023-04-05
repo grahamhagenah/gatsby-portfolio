@@ -84,6 +84,11 @@ const SkillsStyles = styled.div`
     li {
       line-height: 2;
       transition: .25s;
+
+      @media screen and (max-width: 700px) {
+        margin-top: 3rem;
+        font-size: 18px;
+      }
     }
 
     @media screen and (max-width: 700px) {
@@ -131,7 +136,6 @@ const SkillsStyles = styled.div`
     @media screen and (max-width: 700px) {
       display: block;
       margin: 2rem auto;
-      max-width: 250px;
     }
   }
 

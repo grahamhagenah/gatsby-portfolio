@@ -7,7 +7,6 @@ import { graphql } from 'gatsby'
 const IntroStyles = styled.div`
 
   h1 {
-    font-size: 70px;
     font-weight: 600;
     line-height: 1.25;
 
@@ -17,7 +16,6 @@ const IntroStyles = styled.div`
 
     @media screen and (max-width: 700px) {
       padding: 15rem 0 15rem 0;
-      font-size: 42px;
     }
   }
 
@@ -49,10 +47,6 @@ const InfoStyles = styled.div`
 
   a  {
     text-decoration: underline;
-
-    @hover {
-      color: red;
-    }
   }
 
   h2 {

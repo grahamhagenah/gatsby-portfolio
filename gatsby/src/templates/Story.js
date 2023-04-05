@@ -7,7 +7,6 @@ import {PortableText} from '@portabletext/react'
 const IntroStyles = styled.div`
 
   h1 {
-    font-size: 50px;
     font-weight: 500;
     padding: 10rem 0 5rem 0;
     line-height: 1.25;

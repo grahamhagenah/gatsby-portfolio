@@ -16,7 +16,8 @@ const IntroStyles = styled.div`
     line-height: 1.25;
 
     @media screen and (max-width: 700px) {
-      padding: 3rem 0 5rem 0;
+      padding: 8rem 0 5rem 0;
+      font-size: 40px;
     }
   }
 
@@ -141,7 +142,8 @@ const ProjectStyles = styled.div`
     max-width: 80%;
 
     @media screen and (max-width: 700px) {
-      margin: 5rem 0;
+      margin: 5rem auto 5rem auto;
+      max-width: 100%;
     }
   }
 

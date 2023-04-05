@@ -13,16 +13,30 @@ const Typography = createGlobalStyle`
     margin: 0;
   }
 
+  h1 {
+    font-size: 70px;
+
+    @media screen and (max-width: 700px) {
+      font-size: 40px;
+    }
+  }
+
   h2 {
     font-family: 'Barlow', -apple-system, BlinkMacSystemFont, sans-serif;
     font-weight: 600;
-    font-size: 36px;
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+    font-size: 32px;
   }
 
   p {
     font-size: 20px;
     line-height: 2;
     font-family: 'Roboto', sans-serif;
+
+    @media screen and (max-width: 700px) {
+      font-size: 18px;
+    }
   }
 
   .read-more-link {

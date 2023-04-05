@@ -54,6 +54,7 @@ const GlobalStyles = createGlobalStyle`
 
     @media screen and (max-width: 700px) {
       padding: 3rem 0 5rem 0;
+      font-size: 40px;
     }
   }
 
