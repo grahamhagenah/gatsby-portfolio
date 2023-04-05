@@ -15,7 +15,7 @@ const IntroStyles = styled.div`
     }
 
     @media screen and (max-width: 700px) {
-      padding: 15rem 0 15rem 0;
+      padding: 20rem 0;
     }
   }
 

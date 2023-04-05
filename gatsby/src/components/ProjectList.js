@@ -53,7 +53,7 @@ const ProjectStyles = styled.div`
 
       @media screen and (max-width: 700px) {
         max-width: 100%;
-        font-size: 16px;
+        font-size: 17px;
       }
     }
   }

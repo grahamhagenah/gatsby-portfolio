@@ -35,7 +35,7 @@ const Typography = createGlobalStyle`
     font-family: 'Roboto', sans-serif;
 
     @media screen and (max-width: 700px) {
-      font-size: 18px;
+      font-size: 19px;
     }
   }
 

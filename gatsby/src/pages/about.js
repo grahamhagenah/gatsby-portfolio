@@ -13,7 +13,9 @@ const AboutStyles = styled.div`
     font-size: 50px;
 
     @media screen and (max-width: 700px) {
-      padding: 3rem 0 5rem 0;
+      padding: 8rem 0px 5rem;
+      text-align: left;
+      font-size: 40px;
     }
   }
 

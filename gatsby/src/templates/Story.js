@@ -6,15 +6,17 @@ import {PortableText} from '@portabletext/react'
 
 const IntroStyles = styled.div`
 
-  h1 {
-    font-weight: 500;
-    padding: 10rem 0 5rem 0;
-    line-height: 1.25;
+h1 {
+  font-size: 50px;
+  font-weight: 500;
+  padding: 10rem 0 5rem 0;
+  line-height: 1.25;
 
-    @media screen and (max-width: 700px) {
-      padding: 3rem 0 5rem 0;
-    }
+  @media screen and (max-width: 700px) {
+    padding: 8rem 0 5rem 0;
+    font-size: 40px;
   }
+}
 
 `;
 
@@ -56,7 +58,8 @@ const StoryStyles = styled.div`
     overflow: hidden;
 
     @media screen and (max-width: 700px) {
-      margin: 5rem 0;
+      margin: 0 0 5rem 0;
+      max-width: 100%;
     }
   }
 

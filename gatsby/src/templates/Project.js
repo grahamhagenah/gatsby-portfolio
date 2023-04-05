@@ -86,6 +86,11 @@ const ProjectStyles = styled.div`
   .project-button-links {
     margin-bottom: 4rem;
 
+    @media screen and (max-width: 700px) {
+      display: flex;
+      justify-content: space-between;
+    }
+
     button:hover {
       background-color: var(--black);
     }
@@ -98,6 +103,10 @@ const ProjectStyles = styled.div`
       background-color: white;
       color: var(--black);
       border: 2px solid var(--black);
+
+      @media screen and (max-width: 700px) {
+        width: 50%;
+      }
     }
   }
 
@@ -207,7 +216,7 @@ export default function SingleProjectPage({ data: { project } }) {
       <ProjectStyles>
         {project.url !== null &&
           <div className="project-button-links">
-            <button className="mr-2"><a target="_blank" href={project.source}>View code</a></button>
+            <button className="mr-2"><a target="_blank" href={project.source}>View Code</a></button>
             <button><a target="_blank" href={project.url}>View Site</a></button>
           </div>
         }
