@@ -8,9 +8,6 @@ module.exports = {
     siteUrl: `https://grahamhagenah.com`,
     description: `Graham's web projects`
   },
-  flags: {
-    FAST_REFRESH: true
-  },
   plugins: [
     'gatsby-plugin-styled-components',
     `gatsby-plugin-image`,

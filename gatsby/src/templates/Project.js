@@ -140,6 +140,7 @@ const ProjectStyles = styled.div`
   .browser-view-mobile {
     max-width: 300px;
     margin: 0 auto;
+    max-height: 560px;
 
     @media screen and (max-width: 700px) {
       margin: 5rem auto;
@@ -251,14 +252,12 @@ export default function SingleProjectPage({ data: { project } }) {
             <div className="stack-description">
               <PortableText value={project.why} />
             </div>
-            {project.type !== 'story' && 
-              <div className="browser-view-mobile">
-                <div className="browser-top">
-                  <img className="browser-graphic" src={BrowserMobile} alt="" />
-                </div>
-                <GatsbyImage image={mobile} alt="" />
+            <div className="browser-view-mobile">
+              <div className="browser-top">
+                <img className="browser-graphic" src={BrowserMobile} alt="" />
               </div>
-            }
+              <GatsbyImage image={mobile} alt="" />
+            </div>
           </section>
         </div>
       </ProjectStyles>
