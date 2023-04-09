@@ -10,7 +10,6 @@ export function wrapPageElement({element, props}) {
         <meta name="description" content="Web projects created by Graham Hagenah" />
       </Helmet>
       {element}
-    {console.log("This website was designed and built by Graham Hagenah")}
     </Layout>
   )
 }
